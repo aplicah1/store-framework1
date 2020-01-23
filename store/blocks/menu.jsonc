@@ -18,8 +18,7 @@
             "itemProps": {
                 "type": "internal",
                 "tagTitle": "Major Appliances",
-                "text": "Major Appliances",
-                "href": "#"
+                "text": "Major Appliances"
             }
         },
         "blocks": [
@@ -34,12 +33,11 @@
             "itemProps": {
                 "type": "internal",
                 "tagTitle": "Small Appliances",
-                "text": "Small Appliances",
-                "href": "#"
+                "text": "Small Appliances"
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#major"
+            "vtex.menu@2.x:submenu#small"
         ]
     },
 
@@ -50,12 +48,11 @@
             "itemProps": {
                 "type": "internal",
                 "tagTitle": "Electronics",
-                "text": "Electronics",
-                "href": "#"
+                "text": "Electronics"
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#major"
+            "vtex.menu@2.x:submenu#electronics"
         ]
     },
 
@@ -92,6 +89,24 @@
             "menu-item#mixers",
             "menu-item#toasters",
             "menu-item#coffee"
+        ]
+    },
+
+    "vtex.menu@2.x:submenu#electronics": {
+        "children": [
+            "vtex.menu@2.x:menu#electronics"
+        ]
+    },
+
+    "vtex.menu@2.x:menu#electronics": {
+        "props": {
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "menu-item#cameras",
+            "menu-item#laptops",
+            "menu-item#tvs"
         ]
     }
 }
